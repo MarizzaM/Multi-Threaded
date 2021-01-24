@@ -10,8 +10,6 @@ namespace EventsDelegates
 {
     class Program
     {
-
-
         static void PrintToScreen(int number)
         {
             Console.WriteLine($"Curent number = {number}");
@@ -33,19 +31,16 @@ namespace EventsDelegates
             {
                 invocationMethodsList.Invoke(number); 
             }
-
         }
 
         static void Main(string[] args)
         {
-
             invocationMethodsList += PrintToScreen;
             invocationMethodsList += PrintToScreenNumberx2;
             RunFrom1to10(6);
 
             invocationMethodsList -= PrintToScreenNumberx2;
             RunFrom1to10(8);
-
         }
     }
 }
