@@ -22,21 +22,21 @@ namespace EventsDelegates
         {
             Console.WriteLine($"Email: encoded by {sender}...");
             Console.WriteLine($"Email Header: Video Body: {e.VideoName} successfully encoded");
-            Console.WriteLine($"Email Footer: Time of vidio: {e.timeOfVideo}");
+            Console.WriteLine($"Email Footer: Time of video: {e.timeOfVideo}");
         }
 
         static void SendSmsAfterEncoding(object sender, VideoEncoderEventArgs e)
         {
             Console.WriteLine($"SMS: encoded by {sender}...");
             Console.WriteLine($"SMS: -- Body: {e.VideoName} successfully encoded --");
-            Console.WriteLine($"SMS: -- Footer: Time of vidio: {e.timeOfVideo}");
+            Console.WriteLine($"SMS: -- Footer: Time of video: {e.timeOfVideo}");
         }
 
         static void uploadTheVideoIntoTheCloud(object sender, VideoEncoderEventArgs e)
         {
             Console.WriteLine($"Encoded by {sender}...");
             Console.WriteLine($"Body: {e.VideoName} successfully encoded --");
-            Console.WriteLine($"Footer: Time of vidio: {e.timeOfVideo}");
+            Console.WriteLine($"Footer: Time of video: {e.timeOfVideo}");
         }
 
         //private static Action<object, VideoEncoderEventArgs> invocationMethodsList;
