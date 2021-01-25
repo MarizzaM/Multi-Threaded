@@ -60,12 +60,12 @@ namespace EventsDelegates
                     //dividedBy3(i);
                     //dividedBy5(i);
                 }
-                else if(i % 3 == 0)
+                if(i % 3 == 0)
                 {
                     invocationMethodsList += PrintFizz;
                     dividedBy3(i);
                 }
-                else if (i % 5 == 0)
+                if (i % 5 == 0)
                 {
                     invocationMethodsList += PrintBuzz;
                     dividedBy5(i);
