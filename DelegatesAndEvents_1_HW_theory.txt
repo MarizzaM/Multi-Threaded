@@ -1,0 +1,48 @@
+            ===01===
+A delegate is a type that represents references to methods with a particular parameter list and return type
+            ===02===
+A delegate declaration basically declares a method signature, 
+which only includes information about its parameters and return type. 
+And since the same delegate can point to both static and instance methods, 
+it doesn't make sense to make the method signature itself static or instance.
+            ===03===
+The fact that the event is marked public means that it can be subscribed to publically - 
+anyone can add an Action delegate and it will be called when the event fires. 
+If you marked the event private you would only be able to subscribe to it from within the class.
+            ===04===
+Func is a generic delegate included in the System namespace. 
+It has zero or more input parameters and one out parameter. 
+The last parameter is considered as an out parameter.
+
+Action is a delegate type defined in the System namespace. 
+An Action type delegate is the same as Func delegate except that the Action delegate doesn't return a value. 
+In other words, an Action delegate can be used with a method that has a void return type.
+
+Func and Action can help to write more concise, "functional" code.
+            ===05===
+This avoids a null reference exception if there are no subscribers to the event.
+            ===06===
+Delegate.Invoke and Delegate() are identical. Both do the same thing
+            ===07===
+Loose Coupling means reducing dependencies of a components
+In general, delegates increases flexibility and re-usability of code.
+            ===08===
+yes
+            ===09===
+There is in placing a delegate instance no using the equal sign =, if the delegate point to multiple methods.
+The "+" or "+=" operator adds a function to the invocation list, and not replace functions
+            ===10===
+lambda expression create an anonymous function.
+            ===11===
+using lambda expressions in any code that requires instances of delegate types of expression trees 
+is saves time and energy from writing
+            ===12===
+Because a lambda expression can be passed around as a variable or as a parameter to a method call.
+            ===13===
+Wrap the parameters in parentheses
+            ===14===
+If we have only one statement that returns a value
+            ===15===
+Any lambda expression can be converted to a delegate type. 
+If a lambda expression doesn't return a value, it can be converted to one of the Action delegate types;
+otherwise, it can be converted to one of the Func delegate types. 
