@@ -1,0 +1,30 @@
+            
+             * 1 
+      Combine
+             * 2 
+      Yes. Delegate i a class.
+      GetInvocationList - all functions registered for deletage
+             * 3 
+      This method's first parameter is of type Object and refers to the instance that raises the event. 
+      Its second parameter is derived from type EventArgs and holds the event data.
+             * 4
+      public event EventHendler<EventArgs> EventName;
+             * 5
+      The EventArgs class is the base class for all the event data classes
+      class ProcessEventArgs : EventArgs{..}
+      public static void eventHandler(object sender, ProcessEventArgs e);
+      If we want to pass more than one value as event data, then we create our own EventArgs
+             * 6
+      An event is a wrapper around a delegate
+             * 7
+      Delegates hold the reference of the methods
+      Event provides a way to access that method using delegates.
+             * 8
+      An event is a message sent by an object to signal the occurrence of an action. 
+      The action can be caused by user interaction, 
+      such as a button click, or it can result from some other program logic, such as changing a property's value. 
+             * 9
+      private void On EVENT-NAME();
+             * 10
+      public void EVENT-NAME EventHandler(object sender, EVENT-NAME AventArgs)
+             
